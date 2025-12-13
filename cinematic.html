@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Mikaela's 18th Birthday</title>
+    <link rel="icon" type="image/png" href="img/cake.png">
+    <link rel="stylesheet" href="cinematic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="fade-start">
+<!-- Musik -->
+<audio id="bgm" autoplay loop>
+    <source src="audio/namida-surprise.mp3" type="audio/mpeg">
+</audio>
+
+<section class="cinematic">
+
+    <div class="controls">
+        <button onclick="replay()" title="Replay">
+            <i class="fas fa-rotate-right"></i>
+        </button>
+        <button onclick="goHome()" title="Kembali">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+    </div>
+
+    <!-- background -->
+    <img src="img/mika1.jpg" class="bg-img">
+
+    <div class="overlay"></div>
+    <div class="content">
+        <!-- FOTO LUCU -->
+        <img src="img/hbd.jpg" class="cute-photo">
+
+        <!-- TITLE -->
+        <h1 id="typing-text"></h1>
+
+        <!-- UCAPAN -->
+        <div class="wish">
+            <p>
+                Hari ini adalah hari spesial untuk seseorang yang telah memberi warna pada banyak hati.
+                Selamat ulang tahun ke-18, Mikaela. Di setiap langkah yang kamu jalani, selalu ada
+                ketulusan yang terasa, dan di setiap senyummu, ada kehangatan yang tanpa sadar
+                menenangkan banyak orang.
+            </p>
+
+            <p>
+                Semoga di usia yang baru ini, bisa menjadi awal dari bab yang lebih luas tentang mimpi
+                yang tumbuh, keberanian yang semakin kuat, dan perjalanan yang perlahan menemukan
+                maknanya. Semoga setiap langkahmu selalu ditemani doa-doa baik, setiap mimpimu
+                menemukan jalannya, dan setiap usaha yang kamu lakukan berbuah kebahagiaan yang
+                pantas kamu dapatkan.
+            </p>
+
+            <p>
+                Teruslah melangkah dengan caramu sendiri, terus bersinar tanpa harus kehilangan
+                kelembutan yang membuatmu begitu istimewa. Banyak hati yang mendukungmu,
+                percaya padamu, dan akan selalu menantikan cerita-cerita indah yang akan kamu tulis
+                di hari-hari ke depan.
+            </p>
+        </div>
+
+        <div class="credit">
+            🩶made with love by Aditya Gusyanda Aulian🩶
+        </div>
+
+    </div>
+
+</section>
+
+<script src="cinematic.js"></script>
+</body>
+
+<script>
+function replay() {
+    location.reload();
+}
+
+function goHome() {
+    window.location.href = "index.html"; // sesuaikan nama halaman awal
+}
+</script>
+
+</html>

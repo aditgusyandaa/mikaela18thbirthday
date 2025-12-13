@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ANTI FLASH PUTIH */
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+}
+
+/* FADE HITAM */
+body.fade-out {
+    opacity: 0;
+}
+
+/* Landing */
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Background */
+.bg-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+    z-index: 0;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 1;
+}
+
+/* Content */
+.content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button */
+.enter-btn {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    padding: 14px 28px;
+    background: rgba(0,0,0,0.4);
+    border: 1.2px solid #dcdcdc;
+    border-radius: 40px;
+    color: #dcdcdc;
+    cursor: pointer;
+    white-space: nowrap;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.5s;
+    transition: all 0.35s ease;
+}
+.enter-btn i {
+    font-size: 0.75rem;
+    opacity: 0.85;
+}
+
+.enter-btn .icon-left {
+    margin-right: 10px;
+}
+
+.enter-btn .icon-right {
+    margin-left: 10px;
+}
+
+.enter-btn:hover {
+    background: rgba(212,175,55,0.12);
+    box-shadow: 0 0 18px rgba(212,175,55,0.55);
+    transform: scale(1.04);
+}
+
+.credit {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.75rem;
+    letter-spacing: 1.4px;
+    color: #ffffff;
+    opacity: 0;
+    animation: creditFade 1.2s ease forwards;
+    animation-delay: 1s;
+    pointer-events: none;
+    white-space: nowrap;
+    transform: translateX(-50%);
+}
+
+@keyframes creditFade {
+    from {
+        opacity: 0;
+        bottom: 14px;
+    }
+    to {
+        opacity: 1;
+        bottom: 24px;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .enter-btn {
+        padding: 12px 22px;
+        font-size: 0.7rem;
+    }
+}
