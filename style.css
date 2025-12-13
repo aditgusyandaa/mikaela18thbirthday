@@ -127,18 +127,30 @@ body.fade-out {
 }
 
 /* ================= MOBILE ONLY ================= */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+
+    .content {
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 80px; /* ruang buat credit */
+    }
 
     .enter-btn {
         font-size: 0.95rem;
-        padding: 16px 26px;
+        padding: 18px 30px;
+        line-height: 1.4;
         white-space: normal;
         text-align: center;
-        line-height: 1.4;
+    }
+
+    .enter-btn i {
+        font-size: 0.85rem;
     }
 
     .credit {
+        bottom: 16px;
         font-size: 0.7rem;
-        bottom: 20px;
+        letter-spacing: 1.2px;
     }
 }
+
