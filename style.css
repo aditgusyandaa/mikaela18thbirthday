@@ -59,7 +59,7 @@ body.fade-out {
     justify-content: center;
 }
 
-/* Button */
+/* Button (DESKTOP DEFAULT) */
 .enter-btn {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
@@ -79,6 +79,7 @@ body.fade-out {
     animation-delay: 0.5s;
     transition: all 0.35s ease;
 }
+
 .enter-btn i {
     font-size: 0.75rem;
     opacity: 0.85;
@@ -98,6 +99,7 @@ body.fade-out {
     transform: scale(1.04);
 }
 
+/* Credit */
 .credit {
     position: absolute;
     bottom: 24px;
@@ -115,31 +117,28 @@ body.fade-out {
 }
 
 @keyframes creditFade {
-    from {
-        opacity: 0;
-        bottom: 14px;
-    }
-    to {
-        opacity: 1;
-        bottom: 24px;
-    }
+    from { opacity: 0; bottom: 14px; }
+    to   { opacity: 1; bottom: 24px; }
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
+/* ================= MOBILE ONLY ================= */
+@media (max-width: 480px) {
+
     .enter-btn {
-        padding: 12px 22px;
+        font-size: 0.95rem;
+        padding: 16px 26px;
+        white-space: normal;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .credit {
         font-size: 0.7rem;
+        bottom: 20px;
     }
 }
