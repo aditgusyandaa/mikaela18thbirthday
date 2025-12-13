@@ -154,3 +154,36 @@ body.fade-out {
     }
 }
 
+/* ===== MOBILE REAL FIX ===== */
+@media (max-width: 480px) {
+
+    body {
+        overflow: auto; /* PENTING */
+    }
+
+    .landing {
+        min-height: 100svh;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+        margin-top: -40px;
+    }
+
+    .enter-btn {
+        font-size: 1rem;
+        padding: 20px 32px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .credit {
+        position: fixed;
+        bottom: 14px;
+        font-size: 0.75rem;
+        opacity: 0.85;
+        z-index: 10;
+    }
+}
