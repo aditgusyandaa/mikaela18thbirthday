@@ -4,27 +4,77 @@
     box-sizing: border-box;
 }
 
-/* ANTI FLASH PUTIH */
 html, body {
+    background: #000;
     width: 100%;
     height: 100%;
-    background: #000;
 }
 
 body {
     font-family: 'Inter', sans-serif;
     overflow: hidden;
-    opacity: 1;
-    transition: opacity 0.8s ease;
+    color: #dcdcdc;
 }
 
-/* FADE HITAM */
-body.fade-out {
-    opacity: 0;
+/* Controls */
+.controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    gap: 10px;
 }
 
-/* Landing */
-.landing {
+.sound-toggle {
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.45);
+    border: 1px solid #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dcdcdc;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.sound-toggle:hover {
+    background: rgba(212,175,55,0.15);
+    box-shadow: 0 0 12px rgba(212,175,55,0.6);
+    transform: scale(1.05);
+}
+
+.sound-toggle i {
+    font-size: 1rem;
+}
+
+.controls button {
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.45);
+    border: 1px solid #dcdcdc;
+    color: #dcdcdc;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+}
+
+.controls button:hover {
+    background: rgba(212,175,55,0.15);
+    box-shadow: 0 0 12px rgba(212,175,55,0.6);
+    transform: scale(1.05);
+}
+
+/* Section */
+.cinematic {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -41,62 +91,59 @@ body.fade-out {
     z-index: 0;
 }
 
-/* Overlay */
 .overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0,0,0,0.55);
     z-index: 1;
 }
 
-/* Content */
 .content {
     position: relative;
     z-index: 2;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 80px 20px 40px;
 }
 
-/* Button (DESKTOP DEFAULT) */
-.enter-btn {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    text-transform: lowercase;
-    padding: 14px 28px;
-    background: rgba(0,0,0,0.4);
-    border: 1.2px solid #dcdcdc;
-    border-radius: 40px;
-    color: #dcdcdc;
-    cursor: pointer;
-    white-space: nowrap;
-    backdrop-filter: blur(5px);
+/* Cute photo */
+.cute-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
     opacity: 0;
-    animation: fadeInUp 0.8s ease forwards;
-    animation-delay: 0.5s;
-    transition: all 0.35s ease;
+    animation: fadeIn 1.5s forwards;
+    margin-top: -30px;
+    margin-bottom: 18px;
 }
 
-.enter-btn i {
-    font-size: 0.75rem;
-    opacity: 0.85;
+/* Title */
+#typing-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
 }
 
-.enter-btn .icon-left {
-    margin-right: 10px;
+/* Wish */
+.wish {
+    max-width: 1000px;
+    padding: 0 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 5.2s;
 }
 
-.enter-btn .icon-right {
-    margin-left: 10px;
-}
-
-.enter-btn:hover {
-    background: rgba(212,175,55,0.12);
-    box-shadow: 0 0 18px rgba(212,175,55,0.55);
-    transform: scale(1.04);
+.wish p {
+    margin-bottom: 10px;
 }
 
 /* Credit */
@@ -110,10 +157,16 @@ body.fade-out {
     color: #ffffff;
     opacity: 0;
     animation: creditFade 1.2s ease forwards;
-    animation-delay: 1s;
+    animation-delay: 6s;
     pointer-events: none;
     white-space: nowrap;
     transform: translateX(-50%);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 @keyframes creditFade {
@@ -121,32 +174,35 @@ body.fade-out {
     to   { opacity: 1; bottom: 24px; }
 }
 
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(15px); }
-    to   { opacity: 1; transform: translateY(0); }
-}
-
 /* ================= MOBILE ONLY ================= */
 @media (max-width: 768px) {
 
-    .content {
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 80px; /* ruang buat credit */
+    /* 1️⃣ FOTO DIPERBESAR (HP SAJA) */
+    .cute-photo {
+        width: 120px;      /* ← BESAR FOTO */
+        height: 120px;
     }
 
-    .enter-btn {
-        font-size: 0.95rem;
-        padding: 18px 30px;
-        line-height: 1.4;
-        white-space: normal;
-        text-align: center;
+    /* 2️⃣ JUDUL + TEKS UCAPAN DIPERBESAR */
+    #typing-text {
+        font-size: 1.5rem; /* ← BESAR JUDUL */
+        line-height: 1.25;
     }
 
-    .enter-btn i {
-        font-size: 0.85rem;
+    .wish {
+        font-size: 0.75rem; /* ← BESAR TEKS UCAPAN */
+        line-height: 1.75;
     }
 
+    /* 3️⃣ BUTTON / CONTROLS DIPERBESAR */
+    .controls button,
+    .sound-toggle {
+        width: 35px;       /* ← BESAR BUTTON */
+        height: 35px;
+        font-size: 0.7rem;
+    }
+
+    /* 4️⃣ CREDIT DITAMPILKAN JELAS */
     .credit {
         bottom: 16px;
         font-size: 0.7rem;
@@ -158,31 +214,34 @@ body.fade-out {
 @media (max-width: 480px) {
 
     body {
-        overflow: auto; /* PENTING */
+        overflow: auto; /* supaya credit & teks bisa kelihatan */
     }
 
-    .landing {
+    .cinematic {
         min-height: 100svh;
     }
 
-    .content {
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 20px;
-        margin-top: -40px;
+    /* FOTO LEBIH BESAR LAGI */
+    .cute-photo {
+        width: 90px;
+        height: 90px;
     }
 
-    .enter-btn {
-        font-size: 0.95rem;
-        padding: 20px 32px;
-        line-height: 1.2;
-        text-align: center;
+    /* TEKS LEBIH NYAMAN DIBACA */
+    #typing-text {
+        font-size: 0.9rem;
     }
 
+    .wish {
+        font-size: 0.7rem;
+        line-height: 1.5;
+    }
+
+    /* CREDIT SAMA SEPERTI HALAMAN UTAMA */
     .credit {
         position: fixed;
-        bottom: 14px;
-        font-size: 0.7rem;
+        bottom: 16px;
+        font-size: 0.6rem;
         z-index: 10;
     }
 }
