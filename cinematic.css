@@ -139,7 +139,7 @@ body {
     line-height: 1.5;
     opacity: 0;
     animation: fadeIn 2s forwards;
-    animation-delay: 5s;
+    animation-delay: 5.2s;
 }
 
 .wish p {
@@ -157,7 +157,7 @@ body {
     color: rgba(220,220,220,0.75);
     opacity: 0;
     animation: creditFade 1.2s ease forwards;
-    animation-delay: 6.3s;
+    animation-delay: 6s;
     transform: translateX(-50%);
 }
 
