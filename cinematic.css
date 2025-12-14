@@ -241,7 +241,7 @@ body {
     .credit {
         position: fixed;
         bottom: 16px;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         z-index: 10;
     }
 }
