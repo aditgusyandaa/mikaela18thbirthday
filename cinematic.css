@@ -195,8 +195,8 @@ body {
     /* 3️⃣ BUTTON / CONTROLS DIPERBESAR */
     .controls button,
     .sound-toggle {
-        width: 52px;       /* ← BESAR BUTTON */
-        height: 52px;
+        width: 50px;       /* ← BESAR BUTTON */
+        height: 50px;
         font-size: 1.1rem;
     }
 
@@ -222,18 +222,18 @@ body {
 
     /* FOTO LEBIH BESAR LAGI */
     .cute-photo {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 
     /* TEKS LEBIH NYAMAN DIBACA */
     #typing-text {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
 
     .wish {
-        font-size: 1.1rem;
-        line-height: 1.8;
+        font-size: 1rem;
+        line-height: 1.5;
     }
 
     /* CREDIT SAMA SEPERTI HALAMAN UTAMA */
@@ -241,6 +241,7 @@ body {
         position: fixed;
         bottom: 14px;
         font-size: 0.75rem;
-        z-index: 1000;
+        opacity: 0.85;
+        z-index: 10;
     }
 }
