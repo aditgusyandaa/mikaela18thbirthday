@@ -177,18 +177,18 @@ body {
 
     /* 1️⃣ FOTO DIPERBESAR (HP SAJA) */
     .cute-photo {
-        width: 50px;      /* ← BESAR FOTO */
-        height: 50px;
+        width: 70px;      /* ← BESAR FOTO */
+        height: 70px;
     }
 
     /* 2️⃣ JUDUL + TEKS UCAPAN DIPERBESAR */
     #typing-text {
-        font-size: 0.7rem; /* ← BESAR JUDUL */
+        font-size: 0.8rem; /* ← BESAR JUDUL */
         line-height: 1.25;
     }
 
     .wish {
-        font-size: 0.8rem; /* ← BESAR TEKS UCAPAN */
+        font-size: 0.65rem; /* ← BESAR TEKS UCAPAN */
         line-height: 1.75;
     }
 
@@ -222,17 +222,17 @@ body {
 
     /* FOTO LEBIH BESAR LAGI */
     .cute-photo {
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
     }
 
     /* TEKS LEBIH NYAMAN DIBACA */
     #typing-text {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .wish {
-        font-size: 1rem;
+        font-size: 0.65rem;
         line-height: 1.5;
     }
 
@@ -241,7 +241,6 @@ body {
         position: fixed;
         bottom: 14px;
         font-size: 0.5rem;
-        opacity: 0.85;
         z-index: 10;
     }
 }
