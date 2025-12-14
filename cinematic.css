@@ -114,7 +114,7 @@ body {
 .cute-photo {
     width: 120px;
     height: 120px;
-    border-radius: 16px;
+    border-radius: 15px;
     object-fit: cover;
     opacity: 0;
     animation: fadeIn 1.5s forwards;
@@ -177,13 +177,13 @@ body {
 
     /* 1️⃣ FOTO DIPERBESAR (HP SAJA) */
     .cute-photo {
-        width: 100px;      /* ← BESAR FOTO */
-        height: 100px;
+        width: 80px;      /* ← BESAR FOTO */
+        height: 80px;
     }
 
     /* 2️⃣ JUDUL + TEKS UCAPAN DIPERBESAR */
     #typing-text {
-        font-size: 1.8rem; /* ← BESAR JUDUL */
+        font-size: 1rem; /* ← BESAR JUDUL */
         line-height: 1.25;
     }
 
@@ -222,13 +222,13 @@ body {
 
     /* FOTO LEBIH BESAR LAGI */
     .cute-photo {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     /* TEKS LEBIH NYAMAN DIBACA */
     #typing-text {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .wish {
