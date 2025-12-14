@@ -177,35 +177,34 @@ body {
 
     /* 1️⃣ FOTO DIPERBESAR (HP SAJA) */
     .cute-photo {
-        width: 70px;      /* ← BESAR FOTO */
-        height: 70px;
+        width: 100px;      /* ← BESAR FOTO */
+        height: 100px;
     }
 
     /* 2️⃣ JUDUL + TEKS UCAPAN DIPERBESAR */
     #typing-text {
-        font-size: 0.8rem; /* ← BESAR JUDUL */
+        font-size: 1.25rem; /* ← BESAR JUDUL */
         line-height: 1.25;
     }
 
     .wish {
-        font-size: 0.65rem; /* ← BESAR TEKS UCAPAN */
+        font-size: 0.75rem; /* ← BESAR TEKS UCAPAN */
         line-height: 1.75;
     }
 
     /* 3️⃣ BUTTON / CONTROLS DIPERBESAR */
     .controls button,
     .sound-toggle {
-        width: 20px;       /* ← BESAR BUTTON */
-        height: 20px;
+        width: 40px;       /* ← BESAR BUTTON */
+        height: 40px;
         font-size: 0.7rem;
     }
 
     /* 4️⃣ CREDIT DITAMPILKAN JELAS */
     .credit {
-        position: fixed;
         bottom: 16px;
-        font-size: 0.5rem;
-        z-index: 1000;
+        font-size: 0.7rem;
+        letter-spacing: 1.2px;
     }
 }
 
@@ -222,25 +221,25 @@ body {
 
     /* FOTO LEBIH BESAR LAGI */
     .cute-photo {
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 90px;
     }
 
     /* TEKS LEBIH NYAMAN DIBACA */
     #typing-text {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .wish {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
         line-height: 1.5;
     }
 
     /* CREDIT SAMA SEPERTI HALAMAN UTAMA */
     .credit {
         position: fixed;
-        bottom: 14px;
-        font-size: 0.5rem;
+        bottom: 16px;
+        font-size: 0.75rem;
         z-index: 10;
     }
 }
