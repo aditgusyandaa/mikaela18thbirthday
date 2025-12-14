@@ -177,13 +177,13 @@ body {
 
     /* 1️⃣ FOTO DIPERBESAR (HP SAJA) */
     .cute-photo {
-        width: 80px;      /* ← BESAR FOTO */
-        height: 80px;
+        width: 50px;      /* ← BESAR FOTO */
+        height: 50px;
     }
 
     /* 2️⃣ JUDUL + TEKS UCAPAN DIPERBESAR */
     #typing-text {
-        font-size: 1rem; /* ← BESAR JUDUL */
+        font-size: 0.7rem; /* ← BESAR JUDUL */
         line-height: 1.25;
     }
 
@@ -195,9 +195,9 @@ body {
     /* 3️⃣ BUTTON / CONTROLS DIPERBESAR */
     .controls button,
     .sound-toggle {
-        width: 50px;       /* ← BESAR BUTTON */
-        height: 50px;
-        font-size: 1.1rem;
+        width: 20px;       /* ← BESAR BUTTON */
+        height: 20px;
+        font-size: 0.7rem;
     }
 
     /* 4️⃣ CREDIT DITAMPILKAN JELAS */
@@ -222,13 +222,13 @@ body {
 
     /* FOTO LEBIH BESAR LAGI */
     .cute-photo {
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
     }
 
     /* TEKS LEBIH NYAMAN DIBACA */
     #typing-text {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 
     .wish {
