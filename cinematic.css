@@ -175,48 +175,72 @@ body {
 /* ================= MOBILE ONLY ================= */
 @media (max-width: 768px) {
 
-    body {
-        overflow: auto; /* WAJIB biar bisa scroll */
+    /* 1️⃣ FOTO DIPERBESAR (HP SAJA) */
+    .cute-photo {
+        width: 100px;      /* ← BESAR FOTO */
+        height: 100px;
     }
 
-    .cinematic {
-        min-height: 100svh; /* ganti 100vh palsu */
+    /* 2️⃣ JUDUL + TEKS UCAPAN DIPERBESAR */
+    #typing-text {
+        font-size: 1.8rem; /* ← BESAR JUDUL */
+        line-height: 1.25;
     }
 
-    .content {
-        height: auto;               /* jangan kunci tinggi */
-        justify-content: flex-start;
-        padding: 60px 16px 120px;   /* ruang bawah buat credit */
+    .wish {
+        font-size: 0.8rem; /* ← BESAR TEKS UCAPAN */
+        line-height: 1.75;
     }
 
+    /* 3️⃣ BUTTON / CONTROLS DIPERBESAR */
+    .controls button,
+    .sound-toggle {
+        width: 52px;       /* ← BESAR BUTTON */
+        height: 52px;
+        font-size: 1.1rem;
+    }
+
+    /* 4️⃣ CREDIT DITAMPILKAN JELAS */
     .credit {
         position: fixed;
         bottom: 16px;
-        z-index: 999;
-        opacity: 0.85;
+        font-size: 0.75rem;
+        z-index: 1000;
     }
 }
-
 
 /* ===== MOBILE REAL FIX ===== */
 @media (max-width: 480px) {
 
     body {
-        overflow: auto; /* PALING PENTING */
+        overflow: auto; /* supaya credit & teks bisa kelihatan */
     }
 
     .cinematic {
         min-height: 100svh;
     }
 
-    .content {
-        padding: 50px 14px 140px; /* teks + credit aman */
+    /* FOTO LEBIH BESAR LAGI */
+    .cute-photo {
+        width: 150px;
+        height: 150px;
     }
 
+    /* TEKS LEBIH NYAMAN DIBACA */
+    #typing-text {
+        font-size: 2.3rem;
+    }
+
+    .wish {
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+    /* CREDIT SAMA SEPERTI HALAMAN UTAMA */
     .credit {
         position: fixed;
         bottom: 14px;
-        font-size: 0.75rem; /* sama seperti index */
+        font-size: 0.75rem;
         z-index: 1000;
     }
 }
