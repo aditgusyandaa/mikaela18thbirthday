@@ -175,47 +175,34 @@ body {
 /* ================= MOBILE ONLY ================= */
 @media (max-width: 768px) {
 
-    .controls button {
-        width: 46px;
-        height: 46px;
-        font-size: 1rem;
+    body {
+        overflow: auto; /* WAJIB biar bisa scroll */
+    }
+
+    .cinematic {
+        min-height: 100svh; /* ganti 100vh palsu */
     }
 
     .content {
-        padding: 60px 16px 90px; /* ruang buat credit */
-    }
-
-    .cute-photo {
-        width: 140px;
-        height: 140px;
-        margin-top: -10px;
-        margin-bottom: 20px;
-    }
-
-    #typing-text {
-        font-size: 2rem;
-        min-height: 3rem;
-        letter-spacing: 1px;
-    }
-
-    .wish {
-        font-size: 1.05rem;
-        line-height: 1.65;
-        padding: 0 10px;
+        height: auto;               /* jangan kunci tinggi */
+        justify-content: flex-start;
+        padding: 60px 16px 120px;   /* ruang bawah buat credit */
     }
 
     .credit {
-        bottom: 18px;
-        font-size: 0.75rem;
+        position: fixed;
+        bottom: 16px;
+        z-index: 999;
         opacity: 0.85;
     }
 }
+
 
 /* ===== MOBILE REAL FIX ===== */
 @media (max-width: 480px) {
 
     body {
-        overflow-y: auto; /* BUKA SCROLL */
+        overflow: auto; /* PALING PENTING */
     }
 
     .cinematic {
@@ -223,37 +210,13 @@ body {
     }
 
     .content {
-        padding: 50px 16px 120px;
-    }
-
-    .controls button {
-        width: 50px;
-        height: 50px;
-        font-size: 1.1rem;
-    }
-
-    .cute-photo {
-        width: 160px;
-        height: 160px;
-        margin-top: 0;
-    }
-
-    #typing-text {
-        font-size: 2.1rem;
-        line-height: 1.2;
-    }
-
-    .wish {
-        font-size: 1.1rem;
-        line-height: 1.7;
-        padding: 0 8px;
+        padding: 50px 14px 140px; /* teks + credit aman */
     }
 
     .credit {
         position: fixed;
         bottom: 14px;
-        font-size: 0.75rem;
-        opacity: 0.85;
-        z-index: 10;
+        font-size: 0.75rem; /* sama seperti index */
+        z-index: 1000;
     }
 }
