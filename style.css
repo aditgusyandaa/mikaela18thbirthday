@@ -183,7 +183,6 @@ body.fade-out {
         position: fixed;
         bottom: 14px;
         font-size: 0.75rem;
-        opacity: 0.85;
         z-index: 10;
     }
 }
