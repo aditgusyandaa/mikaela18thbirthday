@@ -182,7 +182,7 @@ body.fade-out {
     .credit {
         position: fixed;
         bottom: 14px;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         z-index: 10;
     }
 }
