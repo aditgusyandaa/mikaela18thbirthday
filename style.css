@@ -173,9 +173,9 @@ body.fade-out {
     }
 
     .enter-btn {
-        font-size: 1rem;
+        font-size: 0.8rem;
         padding: 20px 32px;
-        line-height: 1.4;
+        line-height: 1.2;
         text-align: center;
     }
 
