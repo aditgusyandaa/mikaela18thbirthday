@@ -18,7 +18,7 @@ body {
 
 /* Controls */
 .controls {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     z-index: 9999;
@@ -179,13 +179,13 @@ body {
 
     /* 1️⃣ FOTO DIPERBESAR (HP SAJA) */
     .cute-photo {
-        width: 100px;      /* ← BESAR FOTO */
-        height: 100px;
+        width: 120px;      /* ← BESAR FOTO */
+        height: 120px;
     }
 
     /* 2️⃣ JUDUL + TEKS UCAPAN DIPERBESAR */
     #typing-text {
-        font-size: 1.25rem; /* ← BESAR JUDUL */
+        font-size: 1.5rem; /* ← BESAR JUDUL */
         line-height: 1.25;
     }
 
